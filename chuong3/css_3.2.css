@@ -1,0 +1,14 @@
+ p{
+            color:red;
+            font-family: Arial;
+        }
+        p#caption{
+            color:red;
+            background-color: yellow;
+            font-weight: bold;
+            
+        }
+        span{
+            border:dashed 1px red;
+            color: red;
+        }

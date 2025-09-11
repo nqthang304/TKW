@@ -1,0 +1,11 @@
+h1 {
+    font-family: Verdana;
+    font-size: 16pt;
+    text-align: center;
+}
+img {
+    border: 2px solid blue;
+    width: 400px;
+    height: 300px;
+    ;
+}
