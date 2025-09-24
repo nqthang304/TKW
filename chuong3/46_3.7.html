@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 20rem;
+            display: inline-block;
+            margin: 10px;
+            text-wrap: wrap;
+        }
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 14pt;
+        }
+        p.price {
+            font-size: 16pt;
+            font-weight: bold;
+            display: inline;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            
+        }
+        span.old-price {
+            text-decoration: line-through;
+            font-weight: normal;
+            font-size: 12pt;
+            color: gray;
+            margin-left: 13px;
+        }
+        span.percent {
+            color: red;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 12pt;
+            margin-left: 13px;
+        }
+        span.donvi {
+            text-decoration: underline;
+        }
+        @media only screen and (max-width: 768px) {
+            div {
+                display: block;
+                margin: 10px auto;
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://cdn.tgdd.vn/Products/Images/42/342670/iphone-air-xanh-thumb-600x600.jpg" alt="Ip Air 256GB">
+        <p>Điện Thoại iPhone 6 32GB VN/A (Vàng Đồng) - Hàng Chính Hãng</p>
+        <p class="price">6.199.000<span class="donvi">đ</span></p><span class="old-price">8.990.000 <span class="donvi">đ</span></span><span class="percent">-31%</span>
+    </div>
+    <div>
+        <img src="https://cdn.tgdd.vn/Products/Images/42/342667/iphone-17-xanh-duong-thumb-2-600x600.jpg" alt="Ip 17 256GB">
+        <p>Điện Thoại Samsung Galaxy J2 Pro 2018 - Hàng Chính Hãng</p>
+        <p class="price">2.360.000<span class="donvi">đ</span></p><span class="old-price">3.290.000<span class="donvi">đ</span></span><span class="percent">-28%</span>
+    </div>
+    <div>
+        <img src="https://cdn.tgdd.vn/Products/Images/42/342560/samsung-galaxy-s25-fe-blue-thumbai-600x600.jpg" alt="S25 FE 5G">
+        <p>Điện Thoại Xiaomi Mi Mix 2 (Black) - Hàng Chính Hãng</p>
+        <p class="price">7.290.000<span class="donvi">đ</span><span class="old-price">12.990.000 <span class="donvi">đ</span></span></p><span class="percent">-44%</span>
+    </div>
+</body>
+</html>
