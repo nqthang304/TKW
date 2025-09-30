@@ -1,0 +1,29 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 800px;
+}
+
+.grid-item {
+    padding: 50px;
+    font-size: 24px;
+    color: white;
+}
+
+.item1 {
+    background-color: red;
+}
+
+.item2 {
+    background-color: blue;
+}
+
+.item3 {
+    background-color: green;
+}
+
+.item4 {
+    background-color: yellow;
+    color: black; 
+}
