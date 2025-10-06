@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        p {
+            color:#57545481;
+        }   
+        h1 {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .introduce {
+            font-size: 1.3rem;
+            text-align: center;
+            margin: 2% 5%;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 0 5%;
+            flex-wrap: wrap;
+        }
+        .section {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            width: 20vw;
+        }
+        .section img {
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        div.section p {
+            font-size: 1.2em;
+        }
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .section {
+                width: 80vw;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>MobiFone</h1>
+    <p class="introduce">Là mạng viễn thông di động đầu tiên tại Việt Nam. MobiFone được thành lập 16/04/1993 với tên gọi ban đầu là Công ty thông tin di động (VMS). Ngày 01/12/2014. MobiFone được chuyển đổi thành Tổng công ty Viễn thông MobiFone, thuộc Bộ Thông tin và Truyền thông.</p>
+    <div class="main-content">
+        <div class="section 1">
+            <img src="https://vnmobifone.vn/wp-content/uploads/2019/08/tt_1024x576-800-resize.jpg" alt="Sứ mệnh">
+            <h2>Sứ mệnh</h2>
+            <p>Với MobiFone, sứ mệnh là không ngừng đổi mới, sáng tạo và tạo dựng hệ sinh thái số hoàn chỉnh, đáp ứng mọi nhu cầu, đánh thức mọi tiềm năng, đồng hành cùng người Việt kiến tạo tương lai số, xã hội số và góp phần đưa Việt Nam sớm trở thành quốc gia số.</p>
+        </div>
+        <div class="section 2">
+            <img src="https://cdn-images.vtv.vn/562122370168008704/2023/8/14/img3917-1-1691996101245625732425.jpg" alt="Định hướng hoạt động">
+            <h2>Định hướng hoạt động</h2>
+            <p>MobiFone duy trì là doanh nghiệp nhà nước chủ lực quốc gia về cung cấp các dịch vụ số, phát triển dịch vụ viễn thông di động sử dụng các công nghệ nâng cấp và công nghệ mới, phát triển hạ tầng dữ liệu ảo hóa, giải pháp số/nền tảng số và các dịch vụ nội dung số.</p>
+        </div>
+        <div class="section 3">
+            <img src="https://vcdn1-kinhdoanh.vnecdn.net/2025/04/01/1-1743479430-2202-1743479484.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=GLxRBQeGFkBK41kBdkfeFA" alt="Giá trị cốt lõi">
+            <h2>Giá trị cốt lõi</h2>
+            <p>Đứng trước bối cảnh mới, với định hướng chuyển đổi từ kinh doanh dịch vụ viễn thông trở thành nhà cung cấp hạ tầng số và dịch vụ số tại Việt Nam, từng người MobiFone đồng lòng quyết tâm sẽ thực hiện theo định hướng văn hóa mới.</p>
+        </div>
+    </div>
+</body>
+</html>
