@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p,h1,h2,h3 {
+            margin: 10px 20px;
+        }
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            box-sizing: border-box;
+            height: 10vh;
+            background-color: blueviolet;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 10px 0;
+        }
+        header h1 {
+            margin-bottom: 5px;
+        }
+        header p {
+            margin-top: 0;
+        }
+        .nav {
+            background: #2b2d42;
+            padding: 15px 0;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        main {
+            flex: 1;
+        }
+        footer {
+            height: 10vh;
+            background-color: orange;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            display: flex;
+            height: 100%;
+            gap: 20px; 
+            box-sizing: border-box;
+        }
+        .intro {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background-color: antiquewhite;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 4;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        .image {
+            background-color: cadetblue;
+            height: 20vh;
+            margin: 10px 20px;
+        }
+
+        .outstanding {
+            height: 5vh;
+            margin: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Công ty Du lịch Suối tiên</h1>
+        <p>Mang bạn đến với chốn tiên cảnh</p>
+        
+    </header>
+    
+    <main>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#">Giới thiệu</a></li>
+                <li class="nav-item"><a href="#">Chương trình</a></li>
+                <li class="nav-item"><a href="#">Hình ảnh</a></li>
+                <li class="nav-item"><a href="#">Giới thiệu</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="intro">
+                <h2>Giới thiệu về du lịch Đà Nẵng</h2>
+                <p>Thành phố đáng sống nhất việt nam</p>
+                <div class="image">Image</div>
+                <p>Đà Nẵng được xem là thành phố xinh đẹp mà bất kỳ ai cũng phải đến trong đời. Để trả lời cho những câu hỏi trải nghiệm Đà Nẵng đi đâu? Giá vé du lịch tại Đà Nẵng là bao nhiêu? Dưới đây là một số cẩm nang du lịch Đà Nẵng với các địa điểm HOT nhất.</p>
+                <h3>Các hình ảnh nổi bật</h3>
+                <div class="image outstanding">Image</div>
+                <div class="image outstanding">Image</div>
+                <div class="image outstanding">Image</div>
+                <div class="image outstanding">Image</div>
+            </div>
+            <div class="main-content">
+                <h2>CÔNG VIÊN CHÂU Á</h2>
+                <p>Đà Nẵng, ngày 15/08/2023</p>
+                <div class="image">Image</div>
+                <p>Vị trí: Số 1 đường Phan Đăng Lưu, Hoà Cường Bắc, Hải Châu</p>
+                <p>Công viên châu Á - Asia Park sở hữu hàng trăm trò chơi giải trí mạo hiểm đa dạng. Địa điểm du lịch tự túc ở Đà Nẵng nổi tiếng thu hút lượng lớn du khách tham quan hằng năm. Tại đây có rất nhiều trò chơi mạo hiểm như: tàu lượn siêu tốc, tháp rơi tự do... Hoặc trò chơi dành cho các em nhỏ như đu quay, morail... Đặc biệt vòng quay mặt trời Sun Wheel là nơi chắc chắn bạn phải đi thử, nhất là với các cặp đôi.</p>
+                <h2>HẢI ĐĂNG TIÊN SA</h2>
+                <p>Đà Nẵng, ngày 10/08/2023</p>
+                <div class="image">Image</div>
+                <p>Vị trí Thọ Quang, Sơn Trà, Đà Nẵng</p>
+                <p>Hải Đăng Tiên Sa hay còn được gọi là Hải Đăng Sơn Trà là địa điểm được Pháp xây dựng và chính thức đưa vào hoạt động năm 1902. Đây được mệnh danh là ngọn hải đăng đẹp nhất Việt Nam được xây dựng nhằm mục đích giúp các ngư dân xác định vị trí hoạt động của mình trong phạm vi vùng biển Huế và Đà Nẵng. Khách du lịch khám phá Đà Nẵng có thể đến đây để ngắm nhìn đất trời rất tuyệt vời.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright@ 2023 by Tui</p>
+    </footer>
+</body>
+</html>
