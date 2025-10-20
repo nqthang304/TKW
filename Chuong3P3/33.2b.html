@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container,.grid-item {
+            border: 5px solid orange;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-areas:    'header header header'
+                                    'menu main right'
+                                    'menu footer footer';
+        }
+        .grid-item {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(214, 195, 178);
+        }
+        .header {
+            grid-area: header;
+        }
+        .menu {
+            grid-area: menu;
+        }
+        .main {
+            grid-area: main;
+        }
+        .right {
+            grid-area: right;
+        }
+        .footer {
+            grid-area: footer;
+        }
+        @media (max-width: 768px) {
+            .grid-container {
+            display: grid;
+            grid-template-areas:    'header header'
+                                    'menu menu'
+                                    'main right'
+                                    'footer footer';
+        }
+        @media (max-width: 640px) {
+            .grid-container {
+            display: grid;
+            grid-template-areas:    'header'
+                                    'menu'
+                                    'main'
+                                    'right'
+                                    'footer';
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item header">Header</div>
+        <div class="grid-item menu">Menu</div>
+        <div class="grid-item main">Main</div>
+        <div class="grid-item right">Right</div>
+        <div class="grid-item footer">Footer</div>
+    </div>
+</body>
+</html>
