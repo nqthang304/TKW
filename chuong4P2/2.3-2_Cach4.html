@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="2.3-2_Cach4.js"></script>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .form-group label {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="form-group">
+            <label for="name">Họ tên:</label>
+            <p id="name_txt">N/A</p>
+        </div>
+        <div class="form-group">
+            <label for="birthday">Ngày sinh:</label>
+            <p id="birthday_txt">N/A</p>
+        </div>
+        <div>
+            <button onclick="setName()">Họ tên</button>
+            <button onclick="setBirthday()">Ngày sinh</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="2.3-4.js"></script>
+    <style>
+        * {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: flex-start; 
+            justify-content: center; 
+            flex-wrap: wrap;
+        }
+        .side-option {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            cursor: pointer;
+        }
+        .image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            border: 3px solid blue;
+            padding: 5px;
+        }
+        .image img {
+            max-width: 400px;
+            height: 300px;
+            object-fit: cover;
+        }
+        #name_TP {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="side-option">
+            <p onmouseover="show_img_Hanoi()">Hà Nội</p>
+            <p onmouseover="show_img_Hue()">Huế</p>
+            <p onmouseover="show_img_DaNang()">Đà Nẵng</p>
+            <p onmouseover="show_img_HCM()">TP. HCM</p>
+        </div>
+        <div class="image">
+            <img id="img_TP" src="" alt="Ảnh thành phố">
+            <p id="name_TP"></p>
+        </div>
+    </div>
+</body>
+</html>

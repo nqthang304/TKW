@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="2.3-3.js"></script>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center; 
+            justify-content: center; 
+        }
+        .image img {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .option button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: red;
+            color: yellow;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .option button.active,
+        .option button:focus {
+            border-color: crimson;
+            box-shadow: 0 0 0 6px rgba(220,20,60,0.08);
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img id="img_TP" src="" alt="Ảnh thành phố">
+        </div>
+        <div class="option">
+            <button onclick="show_img_Hanoi()">Hà Nội</button>
+            <button onclick="show_img_Hue()">Huế</button>
+            <button onclick="show_img_DaNang()">Đà Nẵng</button>
+        </div>
+    </div>
+</body>
+</html>

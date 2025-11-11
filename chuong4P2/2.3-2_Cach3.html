@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .form-group label {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="form-group">
+            <label for="name">Họ tên:</label>
+            <p id="name_txt">N/A</p>
+        </div>
+        <div class="form-group">
+            <label for="birthday">Ngày sinh:</label>
+            <p id="birthday_txt">N/A</p>
+        </div>
+        <div>
+            <button onclick="setName()">Họ tên</button>
+            <button onclick="setBirthday()">Ngày sinh</button>
+        </div>
+    </form>
+    <script>
+        function setName() {
+            document.getElementById('name_txt').innerHTML = 'Nguyễn Quốc Thắng';
+        }
+        function setBirthday() {
+            document.getElementById('birthday_txt').innerHTML = '30/04/2005';
+        }
+    </script>
+</body>
+</html>
