@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cau1</title>
+    <link rel="stylesheet" href="../cau1/css/cau1.css">
+</head>
+<body>
+    <div class="content">
+        <div class="side-img">
+            <img src="../cau1/img/cau1.jpg" alt="ảnh">
+        </div> 
+        <div class="main-form">
+            <form action="">
+                <h3>ĐĂNG KÝ THAM DỰ SỰ KIỆN</h3>
+                <div class="row hoten">
+                    <label for="hoten">Họ tên <span class="nghiemtrong">*</span></label>
+                    <input type="text" name="hoten" id="hoten" placeholder="Nhập họ tên">
+                </div>
+                <div class="'row gioitinh">
+                    <label for="gioitinh">Giới tính</label><br>
+                    <input type="radio" value="Nam" name="gioitinh" checked>
+                    <label>Nam</label>
+                    <input type="radio" value="Nu" name="gioitinh">
+                    <label>Nữ</label>
+                </div>
+                <div class="row sdt">
+                    <label for="sdt">Số điện thoại <span class="nghiemtrong">*</span></label>
+                    <input type="tel" name="sdt" id="sdt" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="row email">
+                    <label for="email">Email <span class="nghiemtrong">*</span></label>
+                    <input type="email" name="email" id="email" placeholder="Nhập email">
+                </div>
+                <div class="row ngaythamgia">
+                    <label for="ngaythamgia">Ngày tham gia</label>
+                    <input type="date" name="ngaythamgia" id="ngaythamgia">
+                </div>
+                <div class="row loaive">
+                    <label for="loaive">Loại vé</label>
+                    <select name="loaive" id="loaive">
+                        <option value="VIP">VIP</option>
+                        <option value="Normal">Thường</option>
+                    </select>
+                </div>
+                <div class="row loinhan">
+                    <label for="loinhan">Lời nhắn đến ban tổ chức</label>
+                    <textarea name="loinhan" id="loinhan" placeholder="Nhập lời nhắn" rows="5"></textarea>
+                </div>
+                <div class="button">
+                    <button id="dangky">Đăng ký</button>
+                    <button id="xoa">Xoá</button>
+                </div>  
+            </form>
+            
+        </div>             
+    </div>
+</body>
+</html>

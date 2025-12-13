@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cau2b.css">
+</head>
+<body>
+    <div class="main">
+        <p>HIỂN THỊ THÔNG TIN SẢN PHẨM</p>
+        <p class="content" id ="content"></p>
+        <div class="imgblock">
+            <img src="pic.jpg" onmouseover="infor('giay')"  onmouseout="hide()" >
+            <img src="pic.jpg" onmouseover="infor('banphim')" onmouseout="hide()">
+            <img src="pic.jpg" onmouseover="infor('ao')" onmouseout="hide()">
+            <img src="pic.jpg" onmouseover="infor('quabong')" onmouseout="hide()">
+        </div>
+    </div>
+    <script>
+        function infor(name){
+            if (name=="giay"){
+                document.getElementById("content").innerHTML="Giày thể thao ";
+            } else if (name=="banphim"){
+                document.getElementById("content").innerHTML="Bàn phím cơ";
+            } else if (name=="ao"){
+                document.getElementById("content").innerHTML="Áo thun tay ngắn";
+            } else if (name=="quabong"){
+                document.getElementById("content").innerHTML="Quả bóng đá";
+            }
+        }
+        function hide(){
+            document.getElementById("content").innerHTML="";
+        }
+    </script>
+</body>
+</html>

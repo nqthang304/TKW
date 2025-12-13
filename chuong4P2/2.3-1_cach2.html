@@ -35,15 +35,18 @@
                 <label for="birthday">Ngày sinh:</label>
                 <input type="text" id="birthday" name="birthday" onkeydown="document.getElementById('birthday_print').innerHTML = document.getElementById('birthday').value">
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="sex">Giới tính:</label>
-                <input type="text" id="sex" name="sex" onkeydown="document.getElementById('sex_print').innerHTML = document.getElementById('sex').value">
-            </div>
+                <input type="radio" id="sex_m" name="sex" value="Nam" onchange="document.getElementById('sex_print').innerHTML = this.value">
+                <label for="sex_m">Nam</label>
+                <input type="radio" id="sex_f" name="sex" value="Nữ" onchange="document.getElementById('sex_print').innerHTML = this.value">
+                <label for="sex_f">Nữ</label>
+            </div> -->
         </form>
         <div>
             <p>Họ tên: <span id="name_print">__________</span></p>
             <p>Ngày sinh: <span id="birthday_print">__________</span></p>
-            <p>Giới tính: <span id="sex_print">__________</span></p>
+            <!-- <p>Giới tính: <span id="sex_print">__________</span></p> -->
         </div>
     </div>
 </body>

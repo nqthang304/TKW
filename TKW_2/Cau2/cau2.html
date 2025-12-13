@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay Đổi Màu Nền Trang</title>
+    <script src="cau2.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        #notification {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0;
+            min-height: 30px;       
+           
+        }
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .reset-btn {
+            margin-top: 40px;
+            padding: 12px 30px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Thay Đổi Màu Nền Trang</h2>
+    <p id="notification"></p>
+
+    <button onclick="changeBackground('red', 'đỏ')">Đỏ</button>
+    <button onclick="changeBackground('green', 'xanh lá')">Xanh lá</button>
+    <button onclick="changeBackground('cyan', 'xanh dương')">Xanh dương</button>
+    <button onclick="changeBackground('yellow', 'vàng')">Vàng</button>
+    <button onclick="changeBackground('purple', 'tím')">Tím</button>
+
+    <br><br>
+    <button class="reset-btn" onclick="resetBackground()">Đặt lại</button>
+
+  
+</body>
+</html>

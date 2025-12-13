@@ -1,0 +1,22 @@
+.imgblock{
+    display: inline;
+}
+img{
+    width: 60px;
+    cursor: pointer;
+}
+.content{
+    width: 250px;
+    height:150px;
+    background-color: rgb(243, 223, 198);
+    border: 2px solid rgb(161, 158, 158);
+    font-size: 20px;
+    text-align: center;
+
+}
+img:hover{
+    border: 2px solid black;
+}
+p.content{
+    padding-top: 50px;
+}

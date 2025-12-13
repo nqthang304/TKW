@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cau1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "container">
+        <div class = "left">
+            <img src="event.jpg" alt="">
+        </div>
+        <div class = "right">
+            <h1> ĐĂNG KÝ THAM DỰ SỰ KIỆN</h1>
+            <div class="content hoten">
+                <label for="hoten">Họ tên*</label>
+                <br>
+                <input class="line" type="text" id="hoten" name="hoten" placeholder="Nhập họ tên ">
+            </div>
+            <div class="content gender">
+                <label for="gender">Giới tính</label>
+                <br>
+                <input type="radio" id="male" name="gender" value="Nam">Nam
+                <input type="radio" id="female" name="gender" value="Nữ">Nữ
+            </div>
+            <div class="content sdt">
+                <label for="sdt">Số điện thoại*</label>
+                <br>
+                <input class="line" type="text" id="sdt" name="sdt" placeholder="Nhập số điện thoại ">
+
+            </div>
+            <div class="content email">
+                <label for="email">Email*</label>
+                <br>
+                <input class="line" type="text" id="email" name="email" placeholder="Nhập email ">
+            </div>
+            <div class="content date">
+                <label for="date">Ngày tham dự*</label>
+                <br>
+                <input class="line" type="date" id="date" name="date">
+            </div>
+            <div class="content typeve">
+                <label for="typeve">Loại vé *</label>
+                <br>
+                <select class="line" id="typeve" name="typeve">
+                    <option value="standard">Standard</option>
+                    <option value="vip">VIP</option>
+                    <option value="vvip">VVIP</option>
+                </select>
+            </div>
+            <div class="content note">
+                <label for="note">Ghi chú</label>
+                <br>
+                <textarea class="line" id="note" name="note" rows="4" cols="50" placeholder="Nhập lời nhắn"></textarea>
+            </div>
+            <div class="content button">
+                <button class="submit" type="submit">Đăng ký</button>
+                <button class="reset" type="reset">Xóa</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(243, 213, 170);
+    margin: 0;
+    padding: 20px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap:10px;
+
+}
+.left img {
+    border-radius: 10px;
+}
+.right{
+    grid-template-columns: 2/3;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.right h1{
+    line-height: 20px;
+    text-align: center;
+    padding: 20px;
+    color: green;
+}
+.content{
+    line-height: 15px;
+    padding: 15px;
+}
+.content{
+    line-height: 10px;
+    padding: 15px;
+}
+
+
+label{
+    font-weight: bold;
+    font-size: 20px;
+}
+.content input,
+.content select,
+.content textarea {
+    margin-top: 10px;
+    height: 35px ;
+    width: 95% ;
+    border: 1.5px solid #ddd ;
+    border-radius: 8px ;
+    padding: 0 15px ;
+    font-size: 16px;
+    
+}
+.content textarea {
+    height: 60px;
+    padding: 12px 15px !important;
+}
+
+/* Radio giới tính giống hệt */
+.content input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #006400;
+    margin-right: 8px;
+}
+
+
+.submit{
+    width:90px;
+    height: 40px;
+    background-color: rgb(89, 191, 89);
+    color:white;
+    border-radius: 5px;
+    border-color:  rgb(89, 191, 89);
+    border:1px solid rgb(255, 253, 253);
+}
+.reset{
+    width:70px;
+    height: 40px;
+    background-color: red;
+    color:white;
+    border-radius: 5px;
+    border-color: red;
+        border:1px solid rgb(255, 253, 253);
+}
